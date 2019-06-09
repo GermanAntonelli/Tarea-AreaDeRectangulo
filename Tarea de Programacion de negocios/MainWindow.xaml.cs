@@ -20,9 +20,12 @@ namespace Tarea_de_Programacion_de_negocios
     /// </summary>
     public partial class MainWindow : Window
     {
+        public ClaseRectangulo Rectangulo { get; set; }
         public MainWindow()
         {
             InitializeComponent();
+            Rectangulo = new ClaseRectangulo { x1 = "5", x2 = "5", y1 = "3", y2 = "3" };
+            this.DataContext = Rectangulo;
         }
     }
 }
